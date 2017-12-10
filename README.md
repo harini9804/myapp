@@ -22,9 +22,9 @@ The dependencies required for this project is listed in the 'package.json' file.
 
 2.On your machine, navigate to this repository through the command line (suitably git Bash for Windows users).
 
-3.The server.js file is used to handle the API requests and demonstrate the tasks. Hence, run the command 'node server.js'.
+3.The _server.js_ file is used to handle the API requests and demonstrate the tasks. Hence, run the command 'node server.js'.
 
-You should see the message, 'App is listening on port 8080', in the command line window.
+You should see the message, '_App is listening on port 8080_', in the command line window.
 
 4.On your browser, go to http://localhost:8080/ to test the server.
 
@@ -55,11 +55,11 @@ You should see the message, 'App is listening on port 8080', in the command line
 
 	(vi) http://localhost:8080/html
 
-		The 'sample.html' file is displayed on the browser.
+		The '_sample.html_' file is displayed on the browser.
 
 	(vii) http://localhost:8080/input
 
-		The 'input.html' file is displayed on the browser which has a textbox input field. On clicking the 'Submit' button, the data in the input field is sent as a POST request to the /data endpoint in the server.
+		The '_input.html_' file is displayed on the browser which has a textbox input field. On clicking the 'Submit' button, the data in the input field is sent as a POST request to the /data endpoint in the server.
 
 		After clicking the 'Submit' button, you should see the data entered in input field being displayed in your command-line window. The data is also displayed on your browser window.
 
