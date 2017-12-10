@@ -1,10 +1,10 @@
-##Synopsis
+## Synopsis
 
 The aim of this project is to run a simple server at port 8080.
 
 The tool used for the same is the NodeJS-Express framework.
 
-##Installation
+## Installation
 
 The necessary modules were installed from the following web resources:
 
@@ -16,7 +16,7 @@ https://expressjs.com/en/starter/installing.html
 
 The dependencies required for this project is listed in the 'package.json' file.  
 
-##Using this project
+## Using this project
 
 1.Clone this repository and get it on your local machine.
 
