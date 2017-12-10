@@ -39,7 +39,7 @@ A "Hello World - Harini" message is displayed in the browser window.
 
 A list of users and the count of their posts is displayed. 
 The data is obtained through requests to the URLs-
-User data: https://jsonplaceholder.typicode.com/users
+User data: https://jsonplaceholder.typicode.com/users <br />
 Posts data: https://jsonplaceholder.typicode.com/posts
 
 (iii) http://localhost:8080/setcookie
