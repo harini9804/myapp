@@ -17,7 +17,7 @@ The dependencies required for this project is listed in the 'package.json' file 
 
 Navigate to this repository on your local machine through the command-line.
 
-Run the command 'npm install' (without the quotes) from the command-line to install all the dependencies required.
+Run the command `npm install` from the command-line to install all the dependencies required.
 
 ## Using this project
 
