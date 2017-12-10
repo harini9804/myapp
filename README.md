@@ -37,10 +37,10 @@ A "Hello World - Harini" message is displayed in the browser window.
 
 (ii) http://localhost:8080/authors
 
-A list of authors and the count of their posts is displayed. 
+A list of users and the count of their posts is displayed. 
 The data is obtained through requests to the URLs-
-https://jsonplaceholder.typicode.com/users
-https://jsonplaceholder.typicode.com/posts
+User data: https://jsonplaceholder.typicode.com/users
+Posts data: https://jsonplaceholder.typicode.com/posts
 
 (iii) http://localhost:8080/setcookie
 
