@@ -55,11 +55,11 @@ You should see the message, '_App is listening on port 8080_', in the command li
 
 	(vi) http://localhost:8080/html
 
-		The '_sample.html_' file is displayed on the browser.
+		The 'sample.html' file is displayed on the browser.
 
 	(vii) http://localhost:8080/input
 
-		The '_input.html_' file is displayed on the browser which has a textbox input field. On clicking the 'Submit' button, the data in the input field is sent as a POST request to the /data endpoint in the server.
+		The 'input.html_' file is displayed on the browser which has a textbox input field. On clicking the 'Submit' button, the data in the input field is sent as a POST request to the /data endpoint in the server.
 
 		After clicking the 'Submit' button, you should see the data entered in input field being displayed in your command-line window. The data is also displayed on your browser window.
 
