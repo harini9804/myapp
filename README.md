@@ -31,38 +31,38 @@ You should see the message, '_App is listening on port 8080_', in the command li
 
 4.The following URLs can be visited through the browser to execute the tasks mentioned:
 
-	(i) http://localhost:8080/
+(i) http://localhost:8080/
 	
-		A "Hello World - Harini" message is displayed in the browser window.
+A "Hello World - Harini" message is displayed in the browser window.
 
-	(ii) http://localhost:8080/authors
+(ii) http://localhost:8080/authors
 
-		A list of authors and the count of their posts is displayed. 
-		The data is obtained through requests to the URLs-
-		 https://jsonplaceholder.typicode.com/users
-		 https://jsonplaceholder.typicode.com/posts
+A list of authors and the count of their posts is displayed. 
+The data is obtained through requests to the URLs-
+https://jsonplaceholder.typicode.com/users
+https://jsonplaceholder.typicode.com/posts
 
-	(iii) http://localhost:8080/setcookie
+(iii) http://localhost:8080/setcookie
 
-		Cookies with the key-value pairs: name-Harini, age-19 are set.
+Cookies with the key-value pairs: name-Harini, age-19 are set.
 
-	(iv) http://localhost:8080/getcookies
+(iv) http://localhost:8080/getcookies
 
-		The key-value pairs of the cookies set are displayed in the browser window.
+The key-value pairs of the cookies set are displayed in the browser window.
 
-	(v) http://localhost:8080/robots.txt
+(v) http://localhost:8080/robots.txt
 
-		The response status is set as 401 ("Unauthorised") and the 'robots.html' file (contained in this repository) is displayed on the browser.
+The response status is set as 401 ("Unauthorised") and the 'robots.html' file (contained in this repository) is displayed on the browser.
 
-	(vi) http://localhost:8080/html
+(vi) http://localhost:8080/html
 
-		The 'sample.html' file is displayed on the browser.
+The 'sample.html' file is displayed on the browser.
 
-	(vii) http://localhost:8080/input
+(vii) http://localhost:8080/input
 
-		The 'input.html_' file is displayed on the browser which has a textbox input field. On clicking the 'Submit' button, the data in the input field is sent as a POST request to the /data endpoint in the server.
+The 'input.html_' file is displayed on the browser which has a textbox input field. On clicking the 'Submit' button, the data in the input field is sent as a POST request to the /data endpoint in the server.
 
-		After clicking the 'Submit' button, you should see the data entered in input field being displayed in your command-line window. The data is also displayed on your browser window.
+After clicking the 'Submit' button, you should see the data entered in input field being displayed in your command-line window. The data is also displayed on your browser window.
 
 
 
