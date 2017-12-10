@@ -38,7 +38,7 @@ A "Hello World - Harini" message is displayed in the browser window.
 (ii) http://localhost:8080/authors
 
 A list of users and the count of their posts is displayed. 
-The data is obtained through requests to the URLs-
+The data is obtained through requests to the URLs- <br />
 User data: https://jsonplaceholder.typicode.com/users <br />
 Posts data: https://jsonplaceholder.typicode.com/posts
 
