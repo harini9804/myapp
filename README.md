@@ -6,15 +6,18 @@ The tool used for the same is the NodeJS-Express framework.
 
 ## Installation
 
-The necessary modules were installed from the following web resources:
-
-NodeJs:
+1.Install NodeJs:
 https://nodejs.org/en/
 
-Express framework:
-https://expressjs.com/en/starter/installing.html
+2.Clone this repository to your local machine.
 
-The dependencies required for this project is listed in the 'package.json' file.  
+3.To install Express and the dependencies:
+	
+The dependencies required for this project is listed in the 'package.json' file included in this repository.
+
+Navigate to this repository on your local machine through the command-line.
+
+Run the command 'npm install' (without the quotes) from the command-line to install all the dependencies required.
 
 ## Using this project
 
@@ -31,7 +34,7 @@ You should see the message, '_App is listening on port 8080_', in the command li
 5.The following URLs can be visited through the browser to execute the tasks mentioned:
 
 	(i) http://localhost:8080/
-
+	
 		A "Hello World - Harini" message is displayed in the browser window.
 
 	(ii) http://localhost:8080/authors
