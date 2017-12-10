@@ -21,17 +21,15 @@ Run the command `npm install` from the command-line to install all the dependenc
 
 ## Using this project
 
-1.Clone this repository and get it on your local machine.
+1.On your machine, navigate to this repository through the command line (suitably git Bash for Windows users).
 
-2.On your machine, navigate to this repository through the command line (suitably git Bash for Windows users).
-
-3.The _server.js_ file is used to handle the API requests and demonstrate the tasks. Hence, run the command 'node server.js'.
+2.The _server.js_ file is used to handle the API requests and demonstrate the tasks. Hence, run the command 'node server.js'.
 
 You should see the message, '_App is listening on port 8080_', in the command line window.
 
-4.On your browser, go to http://localhost:8080/ to test the server.
+3.On your browser, go to http://localhost:8080/ to test the server.
 
-5.The following URLs can be visited through the browser to execute the tasks mentioned:
+4.The following URLs can be visited through the browser to execute the tasks mentioned:
 
 	(i) http://localhost:8080/
 	
