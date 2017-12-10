@@ -44,7 +44,7 @@ Posts data: https://jsonplaceholder.typicode.com/posts
 
 (iii) http://localhost:8080/setcookie
 
-Cookies with the key-value pairs: name-Harini, age-19 are set.
+Cookies with the key-value pairs: _name-Harini_, _age-19_ are set.
 
 (iv) http://localhost:8080/getcookies
 
