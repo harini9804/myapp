@@ -5,8 +5,13 @@ var request1 = require('request');
 var request2 = require('request');
 var bodyParser =  require('body-parser');
 var cookieParser = require('cookie-parser');
+var axios = require('axios');
 
 app.use(cookieParser());
+
+var urlencodedParser = bodyParser.urlencoded({
+	extended: true
+})
 
 app.get('/',function(req,res){
 	
@@ -22,35 +27,36 @@ var userarr,postarr,userlen,postlen,i,j;
 
 app.get('/authors',function(req,res){
 
-	
-		request1('https://jsonplaceholder.typicode.com/users',function(error,response,body){
-			 userarr = JSON.parse(body);
-			 userlen = userarr.length;
-		
+	axios.all([
+    axios.get('https://jsonplaceholder.typicode.com/users'),
+    axios.get('https://jsonplaceholder.typicode.com/posts')
+  ])
+  .then(axios.spread(function (userResponse, postResponse) {
+    //... but this callback will be executed only when both requests are complete.
+    userarr = userResponse.data;
+    postarr= postResponse.data;
+    userlen = userarr.length;
+    postlen = postarr.length;
 
-			request2('https://jsonplaceholder.typicode.com/posts',function(error,response,body){
-				 postarr = JSON.parse(body);
-				 postlen = postarr.length;
-				
-				var count = new Array(userlen); // an array to maintain the count of posts for each user
+    var count = new Array(userlen);
 
-				for(i=0;i<userlen;i++) 
-				{
+    for(i=0;i<userlen;i++) 
+	{
 					count[i]=0;
-				}
+	}
 
-				for(i=0;i<userlen;i++)
+	for(i=0;i<userlen;i++)
+	{
+		for(j=0;j<postlen;j++)
+		{
+			if(userarr[i].id===postarr[j].userId)
 				{
-					for(j=0;j<postlen;j++)
-					{
-						if(userarr[i].id===postarr[j].userId)
-						{
 							count[i]=count[i]+1;
-						}
-					}
 				}
+		}
+	}
 
-				 res.write('<html><head></head><body>');
+	res.write('<html><head></head><body>');
 				 res.write('<p>');
 				 
 				 res.write('Here is a list of users and the number of posts they have written.<br>');
@@ -61,12 +67,10 @@ app.get('/authors',function(req,res){
 		  		res.write('</p>');
 		  		res.end('</body></html>');
 
-			});
+  }));
 
-		});
-
-
-	});
+});
+	
 
 
 app.get('/setcookie',function(req,res){
@@ -110,9 +114,7 @@ app.get('/input',function(req,res){
 });
 
 
-var urlencodedParser = bodyParser.urlencoded({
-	extended: true
-})
+
 
 app.post('/data',urlencodedParser,function(req,res){
 
